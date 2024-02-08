@@ -44,7 +44,7 @@ nav ul li a:hover::after{
 .carousel-caption {
     position: absolute;
     top: 50%;
-    left: 30%;
+    left: 25%;
     transform: translate(-50%, -50%);
     color: #fff; /* Set text color */
     text-align: center; /* Center align text */
