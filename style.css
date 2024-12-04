@@ -39,6 +39,10 @@ nav ul li a:hover::after{
 
 
 }
+.carousel-item img {
+  width: 100%;
+  height: auto;
+}
 
 
 .carousel-caption {
@@ -50,7 +54,51 @@ nav ul li a:hover::after{
     text-align: center; /* Center align text */
   }
    
-   
+  .carousel-caption {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+    width: 90%; /* Adjust caption width for mobile responsiveness */
+  }
+  
+  .carousel-caption h1 {
+    font-size: 3vw; /* Use viewport width for responsive text size */
+    line-height: 1.2;
+  }
+  
+  .carousel-caption p, .carousel-caption h2, .carousel-caption h4 {
+    font-size: 2vw; /* Make text responsive */
+    margin-top: 10px;
+  }
+  
+  .carousel-caption .btn {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    margin: 5px; /* Space between buttons */
+    width: auto;
+    max-width: 200px; /* Set a maximum width to prevent the buttons from stretching too wide */
+  }
+  
+  @media (max-width: 768px) {
+    .carousel-caption h1 {
+      font-size: 5vw; /* Adjust font size for smaller screens */
+    }
+  
+    .carousel-caption p, .carousel-caption h2, .carousel-caption h4 {
+      font-size: 4vw; /* Adjust text size for mobile */
+    }
+  
+    .carousel-caption .btn {
+      font-size: 1rem; /* Make buttons smaller on mobile */
+      padding: 8px 15px; /* Adjust padding for smaller screens */
+      width: 100%; /* Make buttons fill the width of the screen on small screens */
+      max-width: none; /* Allow buttons to stretch fully */
+    }
+  }
+  
    /* .tri{
     height:auto;
     object-fit: cover;
